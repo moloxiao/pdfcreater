@@ -1,0 +1,18 @@
+{
+  "name": "pdfcreater",
+  "version": "1.0.14",
+  "description": "pdf creater",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "molo.xiao@12301.cn",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.1.4",
+    "pdfkit": "^0.8.0"
+  }
+}

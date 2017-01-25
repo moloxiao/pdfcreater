@@ -16,7 +16,7 @@ that.create = function(dataObj, filePath, cb) {
         .text('检测认证合同', 200, 80);
 
     doc.fontSize(12)
-        .text('检测认证需求方：' + + dataObj.customerName, 40, 130)
+        .text('检测认证需求方：' + dataObj.customerName, 40, 130)
         .text('联系人：' + dataObj.contactName)
         .text('尊敬的客户您好：')
         .text('感谢您的咨询和选择，针对您所需要的以下产品和服务，现我司提供报价：');
@@ -81,7 +81,6 @@ that.create = function(dataObj, filePath, cb) {
         .text('7.由于委托人的原因致使项目延迟或终止，本公司有权要求委托人支付已发生的款项。')
         .text('8. 我们保留将部分测试转包给其他分包试验室的权利.')
         .text('争议解决:合同执行过程中如有争议，委托方和杭州亿塔检测技术有限公司应友好协商解决，不能通过协商解决则按杭州亿塔检测技术有限公司当地的司法程序解决。')
-        .text(' ')
         .text(' ');
 
 
@@ -89,13 +88,11 @@ that.create = function(dataObj, filePath, cb) {
         .text('委托方名称：_______________')
         .text('委托方代表签名/盖章：_______________')
         .text('日期：_______________')
-        .text(' ')
         .text('受托方：杭州亿塔检测技术有限公司')
         .text('受托方代表签名/盖章：_______________')
         .text('日期：_______________');
 
     doc.fontSize(10)
-        .text('  ')
         .text('双方当事人在上述日期签署本合同，特此为证。');
     doc.end();
 

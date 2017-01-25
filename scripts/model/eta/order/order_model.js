@@ -1,6 +1,6 @@
 'use strict';
 
-
+var context = require('../../../context/context');
 
 var that = {};
 
@@ -8,7 +8,7 @@ that.create = function(dataObj, filePath, cb) {
     var PDFDocument = require('pdfkit');
     var doc = new PDFDocument();
     var fs = require('fs');
-    doc.pipe(fs.createWriteStream(filePath + '/file_eta_order_demo.pdf', 'utf-8'));
+    doc.pipe(fs.createWriteStream(context.getRootPath() + filePath + 'file_eta_order_demo.pdf', 'utf-8'));
     doc.font('fonts/hwfs.ttf');
 
     doc.fontSize(24)

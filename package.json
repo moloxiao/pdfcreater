@@ -13,7 +13,6 @@
   "license": "ISC",
   "dependencies": {
     "async": "^2.1.4",
-    "iconv-lite": "^0.4.15",
     "pdfkit": "^0.8.0"
   }
 }

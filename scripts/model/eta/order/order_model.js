@@ -40,7 +40,7 @@ that.create = function(dataObj, filePath, cb) {
         .stroke();
 
     doc.fontSize(16)
-        .text('杭州亿塔检测技术有限公司付款信息');
+        .text('杭州亿塔检测技术有限公司付款信息', 40, 390);
 
     doc.fontSize(12)
         .text('RMB')

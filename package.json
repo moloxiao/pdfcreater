@@ -1,6 +1,6 @@
 {
   "name": "pdfcreater",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "pdf creater",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "keywords": [
     "node"
   ],
-  "author": "molo.xiao@12301.cn",
+  "author": "molo.xiao@gmail.com",
   "license": "ISC",
   "dependencies": {
     "async": "^2.1.4",

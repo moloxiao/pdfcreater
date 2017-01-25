@@ -5,6 +5,7 @@ var context = require('../../../context/context');
 var that = {};
 
 that.create = function(dataObj, filePath, cb) {
+
     var PDFDocument = require('pdfkit');
     var doc = new PDFDocument();
     var fs = require('fs');
@@ -25,13 +26,14 @@ that.create = function(dataObj, filePath, cb) {
         .stroke();
 
     doc.fontSize(12)
-        .text('产品名称[Type Of Product]：LED面板灯', 40, 220)
-        .text('型号[Type Designation]：DL-JA2C07AS1-30W0EL，DL-JA2C07AS1-40W0EL，DL-JA2C07ER1-30W0EL，DL-JA2C07ER1-40W0EL，DL-JA2C18CS1-40W0EL，DL-JA2C18HR1-30W0EL，DL-JA2C18CS1-30W0EL，DL-JA2C18HR1-40W0EL')
-        .text('额定参数[Ratings]：100~240V')
-        .text('认证需求[Requirement]：ERP')
-        .text('周期[TAT]：8month')
-        .text('样品需求[Samples Needs]：15pcs')
-        .text('价格构成[Price]：56,000.00RMB（含6%税点）');
+        .text('报价单号[Order Id]：' + dataObj.etaOrderId, 40, 220)
+        .text('产品名称[Type Of Product]：' + dataObj.customerProductName)
+        .text('型号[Type Designation]：' + dataObj.ratings)
+        .text('额定参数[Ratings]：' + dataObj.ratings)
+        .text('认证需求[Requirement]' + dataObj.requirement)
+        .text('周期[TAT]：' + dataObj.TAT)
+        .text('样品需求[Samples Needs]：' + dataObj.samplesNeeds)
+        .text('价格构成[Price]：' + dataObj.orderPrice);
 
     doc.moveTo(40, 370)
         .lineTo(533, 370)

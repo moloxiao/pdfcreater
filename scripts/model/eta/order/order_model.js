@@ -9,7 +9,7 @@ that.create = function(dataObj, filePath, cb) {
     var doc = new PDFDocument();
     var fs = require('fs');
     doc.pipe(fs.createWriteStream(context.getRootPath() + filePath + 'file_eta_order_demo.pdf', 'utf-8'));
-    doc.font('fonts/hwfs.ttf');
+    doc.font(context.getRootPath() + 'fonts/hwfs.ttf');
 
     doc.fontSize(24)
         .text('检测认证合同', 200, 80);

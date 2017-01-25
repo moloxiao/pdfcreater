@@ -15,13 +15,3 @@ that.getModelManager = function() {
 
 
 module.exports = that;
-
-// function writeToTemp() {
-//     that.getModelManager().getEtaManager().createOrderModel({}, 'temp/', function(err, result) {
-//
-//     });
-// };
-// that.init({
-//   rootPath : './'
-// });
-// writeToTemp();

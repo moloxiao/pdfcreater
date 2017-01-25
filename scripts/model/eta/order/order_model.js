@@ -44,6 +44,9 @@ that.create = function(dataObj, filePath, cb) {
 
 
     doc.end();
+
+    var filePath = '/temp/file_eta_order_demo.pdf';
+    cb(null, filePath);
 }
 
 module.exports = that;
